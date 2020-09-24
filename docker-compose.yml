@@ -1,0 +1,40 @@
+version: '3'
+services:
+
+ kong:
+  image: marcelmaatkamp/kong-with-plugins:${KONG_VERSION}
+  build:
+   context: .
+   args:
+    KONG_VERSION: ${KONG_VERSION}
+  depends_on:
+   - postgres
+  environment:
+   KONG_DATABASE: "postgres"
+   KONG_PG_HOST: "postgres"
+   KONG_PG_DATABASE: "${POSTGRES_DB}"
+   KONG_PG_USER: "${POSTGRES_USER}"
+   KONG_PG_PASSWORD: "${POSTGRES_PASSWORD}"
+   KONG_PLUGINS: "bundled, oidc, amqp, kong-kafka-log"
+   KONG_NGINX_PROXY_LARGE_CLIENT_HEADER_BUFFERS: "16 256k"
+   KONG_NGINX_PROXY_PROXY_BUFFERS: "4 256k"
+   KONG_NGINX_PROXY_PROXY_BUFFER_SIZE: "128k"
+  ports:
+   - 80:8000
+
+ postgres:
+  image: postgres:${POSTGRES_VERSION}
+  restart: "on-failure"
+  environment:
+   POSTGRES_DB: ${POSTGRES_DB}
+   POSTGRES_USER: ${POSTGRES_USER}
+   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  volumes:
+   - pg_data:/var/lib/postgresql/data
+  healthcheck:
+   test: ["CMD", "ps_isready", "-U", "${POSTGRES_USER}"]
+   timeout: "5s"
+   retries: "5"
+
+volumes:
+ pg_data:
