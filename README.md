@@ -1,2 +1,2 @@
-# kong-with-plugins
-kong with plugins like oidc and amqp
+# Kong with plugins
+Kong with plugins like oidc and amqp
