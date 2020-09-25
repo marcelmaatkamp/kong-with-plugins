@@ -1,6 +1,11 @@
 # Kong with plugins
 ![kong](docs/images/kong_1.png)
-Kong with plugins
+
+Kong with plugins:
+
+| x | x |
+| -- | -- |
+| x | x |
 
 # installation
 ```
