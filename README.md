@@ -1,4 +1,5 @@
 # Kong with plugins
+![kong](docs/images/kong_1.png)
 Kong with plugins
 
 # installation
