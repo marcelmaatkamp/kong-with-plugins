@@ -1,5 +1,5 @@
 # Kong with plugins
-![kong](docs/images/kong_1.png)
+![kong](https://github.com/marcelmaatkamp/kong-with-plugins/blob/master/docs/images/kong_1.png)
 
 This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugins` with the following plugins enabled:
 
