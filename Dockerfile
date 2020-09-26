@@ -25,17 +25,17 @@ RUN \
 #  kong-upstream-jwt \
 #  kong-plugin-sa-jwt-claims-validate \
 #  kong-oidc-v2 \
-#  kong-enhanced-oidc \
-#  kong-oidc \
-#  kong-oidc-adfs \
+   kong-enhanced-oidc \
+   kong-oidc \
+   kong-oidc-adfs \
 #  kong-oidc-ng \
 #  kong-oidc-forward-host \
 #  kong-oidc-ws-rbac \
-#  kong-spec-expose \
+   kong-spec-expose \
 #  kong-kafka-log \
 #  kong-response-size-limiting \
 #  kong-splunk-log \
-#  kong-consumer-rate-limiting \
+   kong-consumer-rate-limiting \
 #  comvita-kong-oidc \
 #  kong-plugin-sync-eureka \
 #  kong-error-log \
@@ -45,16 +45,16 @@ RUN \
 #  kong-plugin-jwt-rbac \
 #  lzq-kong-oidc \
 #  kong-plugin-jwt-auth-rbac \
-#  kong-plugin-kubernetes-sidecar-injector \
+   kong-plugin-kubernetes-sidecar-injector \
 #  kong-middleman \
-#  kong-prometheus-plugin \
+   kong-prometheus-plugin \
 #  kong-request-intercept \
-#  kong-plugin-amqp \
+   kong-plugin-amqp \
 #  kong-path-whitelist \
-#  kong-plugin-grpc-web \
+   kong-plugin-grpc-web \
 #  kong-plugin-ice-grpc-gateway \
 #  kong-upstream-hmac \
-#  kong-plugin-grpc-gateway \
+   kong-plugin-grpc-gateway \
 #  kong-external-auth \
 #  ab-microsensor \
 #  kong-plugin-jwt-crafter \
@@ -65,8 +65,8 @@ RUN \
 #  kong-force-https \
 #  kong-plugin-redis-auth \
 #  oauth2-acl \
-#  kong-plugin-request-transformer \
-#  kong-plugin-signalfx \
+   kong-plugin-request-transformer \
+   kong-plugin-signalfx \
 #  kong-churnzero \
 #  kong-plugin-uppercase-response \
 #  kong-plugin-resource-transformer \
@@ -85,3 +85,5 @@ RUN \
 
 RUN \
  luarocks list | ruby -ne '`luarocks install #{$_}` if $_ =~ /^\w+$/'
+
+USER kong
