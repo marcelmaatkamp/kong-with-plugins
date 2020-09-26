@@ -26,7 +26,7 @@ RUN \
 #  kong-plugin-sa-jwt-claims-validate \
 #  kong-oidc-v2 \
 #  kong-enhanced-oidc \
-#  kong-oidc \
+   kong-oidc \
 #  kong-oidc-adfs \
 #  kong-oidc-ng \
 #  kong-oidc-forward-host \
