@@ -1,0 +1,4 @@
+docker build \
+  -t $IMAGE_NAME \
+  --build-arg KONG_VERSION=${DOCKER_TAG} \
+ .
