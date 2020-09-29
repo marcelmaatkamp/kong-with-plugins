@@ -1,14 +1,26 @@
 # Kong with plugins
-![kong](docs/images/kong_1.png)
+![kong](https://github.com/marcelmaatkamp/kong-with-plugins/blob/master/docs/images/kong_1.png)
 
 This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugins` with the following plugins enabled:
 
 | x | x |
 | -- | -- |
+| kong-oidc | -- |
 | kong-upstream-jwt | -- |
 | kong-enhanced-oidc | -- |
-| kong-oidc | -- |
 | kong-oidc-adfs | -- |
+| kong-spec-expose | -- |
+| kong-response-size-limiting | -- |
+| kong-consumer-rate-limiting | -- |
+| kong-plugin-kubernetes-sidecar-injector | -- |
+| kong-plugin-amqp | -- |
+| kong-plugin-grpc-web | -- |
+| kong-plugin-grpc-gateway | -- |
+| kong-plugin-request-transformer | -- |
+| kong-plugin-signalfx | -- |
+| kong-payload-size-limiting | -- |
+
+![kong](https://github.com/marcelmaatkamp/kong-with-plugins/blob/master/docs/images/kong_plugins.png)
 
 # installation
 ```
