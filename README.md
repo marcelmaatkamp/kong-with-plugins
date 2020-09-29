@@ -1,5 +1,5 @@
 # Kong with plugins
-![kong](https://github.com/marcelmaatkamp/kong-with-plugins/blob/master/docs/images/kong_1.png)
+![kong](https://raw.githubusercontent.com/marcelmaatkamp/kong-with-plugins/master/docs/images/kong_1.png)
 
 This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugins` with the following plugins enabled:
 
@@ -20,7 +20,7 @@ This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugi
 | kong-plugin-signalfx | -- |
 | kong-payload-size-limiting | -- |
 
-![kong](https://github.com/marcelmaatkamp/kong-with-plugins/blob/master/docs/images/kong_plugins.png)
+![kong](https://raw.githubusercontent.com/marcelmaatkamp/kong-with-plugins/master/docs/images/kong_plugins.png
 
 # installation
 ```
