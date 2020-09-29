@@ -5,7 +5,10 @@ This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugi
 
 | x | x |
 | -- | -- |
-| x | x |
+| kong-upstream-jwt | -- |
+| kong-enhanced-oidc | -- |
+| kong-oidc | -- |
+| kong-oidc-adfs | -- |
 
 # installation
 ```
