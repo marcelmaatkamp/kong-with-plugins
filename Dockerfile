@@ -25,15 +25,15 @@ RUN \
 #  kong-upstream-jwt \
 #  kong-plugin-sa-jwt-claims-validate \
 #  kong-oidc-v2 \
-   kong-enhanced-oidc \
+#  kong-enhanced-oidc \
    kong-oidc \
-   kong-oidc-adfs \
+#  kong-oidc-adfs \
 #  kong-oidc-ng \
 #  kong-oidc-forward-host \
 #  kong-oidc-ws-rbac \
    kong-spec-expose \
 #  kong-kafka-log \
-#  kong-response-size-limiting \
+   kong-response-size-limiting \
 #  kong-splunk-log \
    kong-consumer-rate-limiting \
 #  comvita-kong-oidc \
