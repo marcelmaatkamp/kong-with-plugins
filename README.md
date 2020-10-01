@@ -20,7 +20,7 @@ This repository builds the Kong docker container `marcelmaatkamp/kong-with-plugi
 | kong-plugin-signalfx | -- |
 | kong-payload-size-limiting | -- |
 
-![kong](https://raw.githubusercontent.com/marcelmaatkamp/kong-with-plugins/master/docs/images/kong_plugins.png
+![kong](https://raw.githubusercontent.com/marcelmaatkamp/kong-with-plugins/master/docs/images/kong_plugins.png)
 
 # installation
 ```
