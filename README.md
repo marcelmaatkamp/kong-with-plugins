@@ -44,7 +44,7 @@ Run kong and konga in kubernetes:
 ```
 $ helm template kong kong/kong \
    --set image.repository="marcelmaatkamp/kong-with-plugins" \
-   --set image.tag="2.1.4" \
+   --set image.tag="latest" \
    --set env.plugins="bundled" \
    --set env.nginx_proxy_large_client_headers="16 256k" \
    --set env.nginx_proxy_proxy_buffers="4 256k" \
